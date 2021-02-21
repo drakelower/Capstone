@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Important Note!!!
+Because a .gitignore is generated when you generate a project, and it contains the line that excludes the node_modules repository from being pushed.
+
+This is done because the folder can be very heavy (several hundreds of Mb), and it would cause your pushes to be very long, and not up-to-date with your semver.
+
+If other users want to run your project locally, they will have to run npm i before ng serve. That's widely accepted as a standard. 
